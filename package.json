@@ -1,0 +1,11 @@
+{
+  "name": "semiland",
+  "version": "1.0.0",
+  "description": "semiland website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/--recursive"
+  },
+  "author": "Semiland",
+  "license": "MIT"
+}
