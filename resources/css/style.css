@@ -181,6 +181,19 @@ input[type=submit]:active{
     color: #080808;
 }
 
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    display: none; }
+
+.menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff; }
 
 /*********** Header *********/
 header{
