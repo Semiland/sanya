@@ -209,7 +209,6 @@ input[type=submit]:active{
     top: 0;
     width: 100%;
     display: none;
-    height: 100vh;
 }
 
 .nav-item-T{
@@ -221,8 +220,12 @@ input[type=submit]:active{
 .menu-T li a:visited{
     display: block;
     border: 0;
-    margin-top: 20px;
     font-size: 40px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #bfc2c4;
+    
 }
 
 /*********** Header *********/
