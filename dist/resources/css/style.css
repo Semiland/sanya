@@ -186,7 +186,7 @@ input[type=submit]:active{
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 20px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -203,6 +203,31 @@ input[type=submit]:active{
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu-T{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+.nav-item-T{
+    list-style: none;
+}
+
+   
+.menu-nav-T{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+}
+
+.menu-nav-T.show{
+    transform: translate3d(0,0,0);
+}
+
 
 /*********** Header *********/
 header{
@@ -265,8 +290,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #efefef;
+    background-color: rgba(0, 0, 0, 0.98);
+    box-shadow: 0 2px 2px #fdfdfd;
 }
 
 .main-nav { margin-top: 18px; }
@@ -274,7 +299,24 @@ header{
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
     padding: 16px 0;
-    color: #555;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+
+.sticky2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #bfb8b8;
+}
+
+.sticky2 .main-nav li a:link,
+.sticky2 .main-nav li a:visited{
+    padding: 15px 0;
+    color: #000000;
 }
 
 /*********** Features *********/
