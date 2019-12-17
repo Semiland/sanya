@@ -32,6 +32,7 @@ function toggleMenu() {
   }
 }
 
+/*
 let scrollpos = window.scrollY
 const header = document.querySelector(".menuForThis")
 const otherSection = document.querySelector(".js--section-features")
@@ -49,3 +50,4 @@ window.addEventListener('scroll', function(){
         remove_class_on_scroll()
     }
 })
+*/

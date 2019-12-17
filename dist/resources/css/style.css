@@ -229,12 +229,10 @@ input[type=submit]:active{
 }
 
 /*********** Header *********/
-header{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(#000)), url(img/EE-comp-BEng-ind.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #000), url(img/EE-comp-BEng-ind.jpg);
+header{    
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 10vh;
     background-attachment: fixed;
 }
 
@@ -254,6 +252,11 @@ header{
     margin: 5px 0;
 }
 
+
+.current a{
+    color: #4cd137;
+}
+
 /* Navigation */
 .main-nav {
     float: right;
@@ -270,6 +273,7 @@ header{
 .main-nav li a:visited{
     padding: 8px 0;
     color: #fff;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -299,23 +303,103 @@ header{
 .sticky .main-nav li a:visited{
     padding: 16px 0;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
-.sticky2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #bfb8b8;
+/*********** Carousel **********/
+.block{
+  display: block !important;
+  color: #e67e22;
 }
 
-.sticky2 .main-nav li a:link,
-.sticky2 .main-nav li a:visited{
-    padding: 15px 0;
-    color: #000000;
+.block-full{
+  width: 100% !important;
+  color: #e67e22;
+}
+
+.el-carousel{
+  overflow-x: hidden;
+
+  border-radius: 9px;
+  width: 1410px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #e67e22;
+} 
+
+.boxshadow1{
+  box-shadow: 15px 15px 30px rgba(0,0,0,.06) !important;
+}
+
+.el-carousel .el-carousel__container {
+
+    height: 750px;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.el-carousel .el-carousel__container .el-carousel__keep-content {
+
+    z-index: 112;
+
+}
+
+.text-center {
+    text-align: center !important;
+    align-content: center !important;
+    justify-content: center !important;
+
+}
+
+.height-full {
+
+    height: 100% !important;
+
+}
+.flex {
+
+    display: flex !important;
+
+}
+
+.flex-vcenter {
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+}
+
+.h-padding-xlarge-md-up {
+
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+
+}
+.h-padding-large {
+
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+
+}
+.v-padding-large {
+
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+
+}
+
+.carousel-container{
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 /*********** Features *********/
@@ -630,4 +714,31 @@ footer p{
     text-align: center;
     font-size: 90%;
     margin-top: 30px;
+}
+
+/* About */
+.about-page-title{
+    font-weight: 300;
+    color: #000000;
+    text-transform: none;
+    font-size: 40px;
+        word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+aside#side-bar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+.container-about{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
