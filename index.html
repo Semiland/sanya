@@ -5,7 +5,6 @@
     <head>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -15,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <script src="https://kit.fontawesome.com/bec0064329.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+      
         <title>Semiland | Power module company</title>
     </head>
     
@@ -26,71 +26,96 @@
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
             </div>
-            <nav class="menu-T">
-                      <ul class="menu-nav-T">
-                        <li class="nav-item-T">
-                          <a href="about.html" class="nav-link">
+        <nav class="menu-T">
+            <ul class="menu-nav-T">
+                        <li class="nav-item-T current">
+                          <a href="index.html" class="nav-link">
                             Home
                           </a>
                         </li>
                         <li class="nav-item-T">
-                          <a href="about.html" class="nav-link">
-                            About Us
-                          </a>
+                          <a href="about.html" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item-T">
-                          <a href="work.html" class="nav-link">
-                            Services
-                          </a>
+                          <a href="services.html" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item-T">
-                          <a href="contact.html" class="nav-link">
-                            Career
-                          </a>
+                          <a href="career.html" class="nav-link">Career</a>
                         </li>
                         <li class="nav-item-T">
-                          <a href="work.html" class="nav-link">
-                            Contact
-                          </a>
+                          <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item-T">
-                          <a href="work.html" class="nav-link">
-                            Blog
-                          </a>
+                          <a href="blog.html" class="nav-link">Blog</a>
                         </li> 
                       </ul>
                     </nav>
             
-            <nav class="menu menuForThis">
+            <nav class="menu menuForThis sticky">
                 <div class="row menu-branding">
                     <a href="index.html" class="navbar-brand">
                         <img src="resources/img/11.ico" alt="Semiland logo" class="logo">
                     </a>
                     <div>
                         <ul class="main-nav sec-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                            <li class="nav-item current">
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">About Us</a>
+                                <a href="about.html" class="nav-link">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Services</a>
+                                <a href="services.html" class="nav-link">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Career</a>
+                                <a href="career.html" class="nav-link">Career</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
+                                <a href="contact.html" class="nav-link">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                                <a href="blog.html" class="nav-link">Blog</a>
                             </li>
                         </ul>  
                     </div>   
                 </div>
             </nav>
         </header>   
+      
+        <section>
+          <div class="block block-full">
+            <div>
+              <div class="el-carousel boxshadow1">
+                <div class="el-carousel__container" style="height:undefined">
+                  <div class="flex height-full text-center el-carousel__keep-content">
+                    <div class="flex-vcenter">
+                      <div class="block v-padding-large h-padding-large h-padding-xlarge-md-up">
+                        <div id="slider4" class="carousel slide" data-ride="carousel">
+                          <!-- Starts from here -->
+                        
+                          <div class="carousel-container">
+                            <div class="carousel-slide">
+                              <img src="resources/img/about.jpg" alt="">
+                              <img src="resources/img/about.jpg" alt="">
+                              <img src="resources/img/about.jpg" alt="">
+                              <img src="resources/img/about.jpg" alt=""> 
+                            </div>
+                          </div>
+                          
+                          <button id="prevBtn">Prev</button>
+                          <button id="nextBtn">Next</button>
+                          
+                          <!-- fiished --> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+              
         
         <section class="section-features js--section-features">
             <div class="row">
@@ -292,8 +317,25 @@
         </footer>
          
         <script scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
+        <script>
+          $('.carousel').carousel({
+            interval: 3000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true
+          });
+
+          $('#slider4').on('slide.bs.carousel', function () {
+            console.log('SLIDE!');
+          });
+
+          $('#slider4').on('slid.bs.carousel', function () {
+            console.log('SLID!');
+          });
+
+        </script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/carousel.js"></script>
         <script src="resources/js/scripts.js"></script>
         <script src="resources/js/main.js"></script>
     </body>
