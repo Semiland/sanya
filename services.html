@@ -1,128 +1,134 @@
 <!DOCTYPE>
 <html lang="en">
     
-    <!-- Head -->
     <head>
-        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="resources/scss/main.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/scss/style.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <script src="https://kit.fontawesome.com/bec0064329.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/queries.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <title>Semiland | Power module company</title>
     </head>
-    
-    <!-- Body -->
+
     <body>
-        <header>
-            <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
+      <header id="header-home">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
             </div>
-        <nav class="menu-T">
-            <ul class="menu-nav-T">
-                        <li class="nav-item-T current">
-                          <a href="index.html" class="nav-link">
-                            Home
-                          </a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="about.html" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="career.html" class="nav-link">Career</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="blog.html" class="nav-link">Blog</a>
-                        </li> 
-                      </ul>
-                    </nav>
+          </div>
+        </div>
+        
+        <div class="container">
+          <nav id="main-nav">
+            <img src="img/11.ico" alt="Semiland LTD" id="logo">
+            <ul class="header-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html" class="current">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section id="services-articles-a">
+        <div class="container2 container-grid">
+          <aside class="sidebar">
+            <h2>Power Modules</h2>
+            <p>Semiland's core business focus on development, manufacturing and sales of Hybrid and Full SiC power electronics modules including the gate driver products. Starting from innovative packaging technology and system integration of SiC power modules, we will deliver high quality power module products with low parasitic inductance, high operation temperature as well as high switching frequency capability.</p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+          <section class="img-content">
+            <img src="css/img/services/power-module.png">
+          </section>
+        </div>
+      </section>
+      
+      <section id="services-articles-a">
+        <div class="container2 container-grid">
+          <aside class="sidebar">
+            <h2>Customized Products</h2>
+            <p>We offer rapid prototyping and make every effort to make it right the first time to cut down the time-to-market. Customized product design, development and engineering services for the partner companies is another part of our businesses. We assure you that we always work closely with our partners from design concept to mass production.</p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+          <section class="img-content">
+            <img src="css/img/services/customized-products.png">
+          </section>
+        </div>
+      </section>
+      
+      <section id="services-articles-a">
+        <div class="container2 container-grid">
+          <aside class="sidebar">
+            <h2>Testing and Calibration</h2>
+            <p>We offer effective and efficient test solutions, including statistic&amp;dynamic testing and reliability testing for the power devices and modules. Our testing department posses a wide range of high-end testing facilities that enable the tests including but not limited to the followings: HALT&amp;HASS, HTRB, HTGB, H3TRB, HTS, LTS, HAST, PC, TC,TS. The experts of our FA team also offers extensive examination of products and materials failure analysis using state-of-the-art laboratory equipment to construe the mechanisms of failure.</p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+          <section class="img-content">
+            <img src="css/img/services/testing.jpg">
+          </section>
+        </div>
+      </section>
+      
+      <section id="services-articles-a">
+        <div class="container2 container-grid">
+          <aside class="sidebar">
+            <h2>Simulation and Modeling</h2>
+            <p>Our simulation team has extensive competencies in electronic, thermal and mechanical desin and simulation. We offer analytical modeling, simulation and calibration services in SST, transient thermal, stress and structure analysis, electrical field strength analysis, vibration and shock analysis etc. The experts of our FA team also offers extensive examination of products and materials failure analysis using state-of-the-art laboratory equipment to construe the mechanisms of failure. </p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+          <section class="img-content">
+            <img src="css/img/services/simulation-modeling.jpg">
+          </section>
+        </div>
+      </section>      
+      
+      <footer id="main-footer" class="pt-4">
+        <div class="foot">
+          <div class="footer-content container-footer">           
+          <div class="col span-1-of-2">
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
             
-            <nav class="menu menuForThis sticky">
-                <div class="row menu-branding">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="resources/img/11.ico" alt="Semiland logo" class="logo">
-                    </a>
-                    <div>
-                        <ul class="main-nav sec-nav">
-                            <li class="nav-item current">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="services.html" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="career.html" class="nav-link">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link">Blog</a>
-                            </li>
-                        </ul>  
-                    </div>   
-                </div>
-            </nav>
-        </header>
+          <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><i class="icon ion-logo-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+            <a href="https://www.google.com/" target="_blank"><i class="icon ion-logo-google"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+            <img src="css/img/semiland-QR.jpg" alt="" class="semiland-qr-code">
+          </div>
+        </div>
+        <div class="semiland-rights">
+          <p class="semiland-copyright">&copy;2020 Semiland Co., Ltd. All Rights Reserver.</p>
 
-        <section class="section-steps">
-            <div class="container-about">
-                <article id="main-col">
-                    <h1 class="about-page-title">Services</h1>
-                </article>
-            </div>
-        </section>
-        
-        
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>    
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><i class="icon ion-md-trophy"></i></li>
-                        <li><i class="icon ion-md-school"></i></li>
-                        <li><i class="icon ion-md-ribbon"></i></li>
-                        <li><i class="icon ion-md-play"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 by Semiland. All right reserved.
-                </p>
-            </div>
-                
-        </footer>
-         
-        <script scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/scripts.js"></script>
-        <script src="resources/js/main.js"></script>
+        </div>
+        </div>        
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-
+  
+  
 </html>

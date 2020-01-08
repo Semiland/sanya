@@ -1,128 +1,108 @@
 <!DOCTYPE>
 <html lang="en">
     
-    <!-- Head -->
-    <head>
-        
+    <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="resources/scss/main.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/scss/style.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <script src="https://kit.fontawesome.com/bec0064329.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/queries.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <title>Semiland | Power module company</title>
     </head>
-    
-    <!-- Body -->
+
     <body>
-        <header>
-            <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
+      <header id="header-home">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
             </div>
-        <nav class="menu-T">
-            <ul class="menu-nav-T">
-                        <li class="nav-item-T current">
-                          <a href="index.html" class="nav-link">
-                            Home
-                          </a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="about.html" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="career.html" class="nav-link">Career</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="blog.html" class="nav-link">Blog</a>
-                        </li> 
-                      </ul>
-                    </nav>
+          </div>
+        </div>
+        
+        <div class="container">
+          <nav id="main-nav">
+            <img src="img/11.ico" alt="Semiland LTD" id="logo">
+            <ul class="header-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html" class="current">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <!-- Show Case -->
+      <section id="career-showcase">
+        <div class="container">
+          <div class="showcase-container">
+            <div class="showcase-content">
+              <h2>Career</h2>
+            </div>
+            <p>We offer a diverse, flexible and highly supportive working environment that allows you to explore your interests and promotes professional integrity, innovation and teamwork. Please email your latest CV to us: <span class="email-highlight">career@semiland.com</span>.</p>
+          </div>
+          <div class="career-buttons">
+            <div class="p-a-e">
+              <a class="btn" target="" href="r-d-center.html">R&amp;D Center</a>
+            </div>
+            <div class="m-o">
+              <a class="btn" href="engineering-manufacturing.html">Engineering &amp; Manufacturing</a>
+            </div>
+            <div class="s-a-m">
+              <a class="btn" href="sales-marketing.html">Sales &amp; Marketing</a>
+            </div>
+            <div class="c-s">
+              <a class="btn" href="company-services.html">Company Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer id="main-footer" class="pt-4">
+        <div class="foot">
+          <div class="footer-content container-footer">           
+          <div class="col span-1-of-2">
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
             
-            <nav class="menu menuForThis sticky">
-                <div class="row menu-branding">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="resources/img/11.ico" alt="Semiland logo" class="logo">
-                    </a>
-                    <div>
-                        <ul class="main-nav sec-nav">
-                            <li class="nav-item current">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="services.html" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="career.html" class="nav-link">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link">Blog</a>
-                            </li>
-                        </ul>  
-                    </div>   
-                </div>
-            </nav>
-        </header>
+          <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><i class="icon ion-logo-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+            <a href="https://www.google.com/" target="_blank"><i class="icon ion-logo-google"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+            <img src="css/img/semiland-QR.jpg" alt="" class="semiland-qr-code">
+          </div>
+        </div>
+        <div class="semiland-rights">
+          <p class="semiland-copyright">&copy;2020 Semiland Co., Ltd. All Rights Reserver.</p>
 
-        <section class="section-steps">
-            <div class="container-about">
-                <article id="main-col">
-                    <h1 class="about-page-title">Career</h1>
-                </article>
-            </div>
-        </section>
-        
-        
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>    
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><i class="icon ion-md-trophy"></i></li>
-                        <li><i class="icon ion-md-school"></i></li>
-                        <li><i class="icon ion-md-ribbon"></i></li>
-                        <li><i class="icon ion-md-play"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 by Semiland. All right reserved.
-                </p>
-            </div>
-                
-        </footer>
-         
-        <script scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/scripts.js"></script>
-        <script src="resources/js/main.js"></script>
+        </div>
+        </div>        
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-
+  
+  
 </html>

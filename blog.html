@@ -1,128 +1,138 @@
 <!DOCTYPE>
 <html lang="en">
     
-    <!-- Head -->
-    <head>
-        
+    <head> 
+      <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="resources/scss/main.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/scss/style.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <script src="https://kit.fontawesome.com/bec0064329.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/queries.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <title>Semiland | Power module company</title>
     </head>
-    
-    <!-- Body -->
+
     <body>
-        <header>
-            <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
+      <header id="header-home">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
             </div>
-        <nav class="menu-T">
-            <ul class="menu-nav-T">
-                        <li class="nav-item-T current">
-                          <a href="index.html" class="nav-link">
-                            Home
-                          </a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="about.html" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="career.html" class="nav-link">Career</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="blog.html" class="nav-link">Blog</a>
-                        </li> 
-                      </ul>
-                    </nav>
+          </div>
+        </div>
+        
+        <div class="container">
+          <nav id="main-nav">
+            <img src="img/11.ico" alt="Semiland LTD" id="logo">
+            <ul class="header-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html" class="current">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section id="home-articles">
+        <div class="container">
+          <h1>Semiland News</h1>
+          <div class="articles-container">
+            <article class="card-semiland card-semiland-aside">
+              <img src="css/img/article/520237640.jpg" alt="">
+              <div>
+                <div class="category category-new">NEW!</div>
+                <h3 class=""><a href="article-1.html">Semiland Won the First Place!</a></h3>
+                <p>创新松湖创业大赛新材料行业赛结果出炉 Semiland 获材料组第一名 全国总决赛一等奖
+Semiland Won the First Place in Songhu Innovative Entrepreneurship Competition New Material Group and First Prize of National Finals</p>
+              </div>
+            </article>
             
-            <nav class="menu menuForThis sticky">
-                <div class="row menu-branding">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="resources/img/11.ico" alt="Semiland logo" class="logo">
-                    </a>
-                    <div>
-                        <ul class="main-nav sec-nav">
-                            <li class="nav-item current">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="services.html" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="career.html" class="nav-link">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link">Blog</a>
-                            </li>
-                        </ul>  
-                    </div>   
-                </div>
-            </nav>
-        </header>
+            <article class="card-semiland">             
+              <h3><a href="article-2.html">Bosch to enter production of SiC power semiconductors</a></h3>
+              <p>The automotive supplier Bosch plans to use more efficient power semiconductors to extend the range of electric vehicles.
+The range is still one of the biggest obstacles for customers before buying an electric vehicle. The automotive supplier Bosch now intends to counteract this with the use...</p>
+            </article>
+            
+            <article class="card-semiland"> 
+              <img src="css/img/blog/img2.jpg" alt="">
+              <h3 class="ma-2 small-2"><a href="article-3.html">Yangzhong, a beautiful city in China!</a></h3>
+              <p>Yangzhong is located in the heart of the east Zhenjiang City, middle and lower reaches of the Yangze River. The northeast part faces Taizhou and Yangzhou across the river, and the southwest part is close to Zhenjiang and Changzhou. The south bridge connects Shanghai-Nanjing Highway and Beijing-Shanghai Railway, the North part is connected to Beijing-Shanghai Highway. It only takes about 2.5 hours to get to Shanghai Pudong International Airport, and 1.5 hours to Nanjing Lukou International Airport...</p>
+            </article>
+            
+            <article class="card-semiland"> 
+              <h3><a href="article-4.html">CREE Investing $1 B In North Carolina</a></h3>
+              <p>Cree, Inc. will invest up to $1 billion in the expansion of its silicon carbide capacity with the development of a state-of-the-art, automated 200mm silicon carbide fabrication facility and a materials mega factory at its U.S. campus headquarters in Durham, NC. The investment is part of the company’s long-term growth strategy, and marks its largest investment to date in fueling its Wolfspeed silicon carbide and GaN on silicon carbide business...</p>
+              <img src="css/img/blog/img3.jpg" alt="">
+            </article>
+            
+            <article class="card-semiland"> 
+              <img src="css/img/blog/tesla-3.jpg" alt="">
+              <h3 class="ma-2"><a href="article-5.html">ST Microelectronics Bets on SiC.</a></h3>
+              <p>Silicon Carbide (SiC) is a wide bandgap (WBG) material that has advantages when compared to silicon (Figure 1).  For the same die size and thickness, WBG devices provide higher breakdown voltage, current, operating temperature, and switching speed; and lower switching loss over Si devices. One of the main advantages of SiC devices is its capability to operate at high temperatures. When a power chip can operate at high temperature, the cooling cost can be reduced...</p>
+            </article>
+            
+            <article class="card-semiland">             
+              <h3><a href="article-6.html">Overview of Power Semiconductor Devices</a></h3>
+              <p>Power Semiconductor Device is also called Power Electronic Device. In 1940, when Bell Labs researched the radar detection rectifier, it was found that silicon has a PN junction effect. In 1958, GE developed the world’s first general thyristor for industrial use, making the birth of power electronics technology...</p>
+            </article>
+            
+            <article class="card-semiland card-semiland-aside start-at-2">
+              <div>
+                <h3><a href="article-7.html">New 3rd Generation WBG Power Semiconductor</a></h3>
+                <p>Semiland “The New 3rd Generation WBG Power Semiconductor SiC Power Module Packaging and System Integration Technologies” was selected as the “Jinshan Talent” program in Zhenjiang</p>
+              </div>
+              <img src="css/img/blog/ent2.jpg" alt="">
+            </article>
+            
+          </div>
+        </div>
+      </section>
+      
+      <footer id="main-footer" class="pt-4">
+        <div class="foot">
+          <div class="footer-content container-footer">           
+          <div class="col span-1-of-2">
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+            
+          <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><i class="icon ion-logo-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+            <a href="https://www.google.com/" target="_blank"><i class="icon ion-logo-google"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+            <img src="css/img/semiland-QR.jpg" alt="" class="semiland-qr-code">
+          </div>
+        </div>
+        <div class="semiland-rights">
+          <p class="semiland-copyright">&copy;2020 Semiland Co., Ltd. All Rights Reserver.</p>
 
-        <section class="section-steps">
-            <div class="container-about">
-                <article id="main-col">
-                    <h1 class="about-page-title">Blog</h1>
-                </article>
-            </div>
-        </section>
-        
-        
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>    
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><i class="icon ion-md-trophy"></i></li>
-                        <li><i class="icon ion-md-school"></i></li>
-                        <li><i class="icon ion-md-ribbon"></i></li>
-                        <li><i class="icon ion-md-play"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 by Semiland. All right reserved.
-                </p>
-            </div>
-                
-        </footer>
-         
-        <script scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/scripts.js"></script>
-        <script src="resources/js/main.js"></script>
+        </div>
+        </div>        
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-
+  
+  
 </html>

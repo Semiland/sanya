@@ -1,340 +1,202 @@
 <!DOCTYPE>
 <html lang="en">
     
-    <!-- Head -->
-    <head>
-        
+    <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="resources/scss/main.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/scss/style.scss">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <script src="https://kit.fontawesome.com/bec0064329.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
-      
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/queries.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <title>Semiland | Power module company</title>
     </head>
-    
-    <!-- Body -->
+
     <body>
-        <header>
-            <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </div>
-        <nav class="menu-T">
-            <ul class="menu-nav-T">
-                        <li class="nav-item-T current">
-                          <a href="index.html" class="nav-link">
-                            Home
-                          </a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="about.html" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="career.html" class="nav-link">Career</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item-T">
-                          <a href="blog.html" class="nav-link">Blog</a>
-                        </li> 
-                      </ul>
-                    </nav>
-            
-            <nav class="menu menuForThis sticky">
-                <div class="row menu-branding">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="resources/img/11.ico" alt="Semiland logo" class="logo">
-                    </a>
-                    <div>
-                        <ul class="main-nav sec-nav">
-                            <li class="nav-item current">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="services.html" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="career.html" class="nav-link">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link">Blog</a>
-                            </li>
-                        </ul>  
-                    </div>   
-                </div>
-            </nav>
-        </header>   
-      
-        <section>
-          <div class="block block-full">
+      <header id="header-home">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
             <div>
-              <div class="el-carousel boxshadow1">
-                <div class="el-carousel__container" style="height:undefined">
-                  <div class="flex height-full text-center el-carousel__keep-content">
-                    <div class="flex-vcenter">
-                      <div class="block v-padding-large h-padding-large h-padding-xlarge-md-up">
-                        <div id="slider4" class="carousel slide" data-ride="carousel">
-                          <!-- Starts from here -->
-                        
-                          <div class="carousel-container">
-                            <div class="carousel-slide">
-                                <h1>Semiland is in slides view</h1>
-                            </div>
-                          </div>
-                          
-                          <button id="prevBtn">Prev</button>
-                          <button id="nextBtn">Next</button>
-                          
-                          <!-- fiished --> 
-                        </div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <nav id="main-nav">
+            <img src="img/11.ico" alt="Semiland LTD" id="logo">
+            <ul class="header-items">
+              <li><a href="index.html" class="current">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section id="start-of-home" class="py-4">
+        <div class="conteiner">
+          <div class="row">
+            <div class="col-sm-9 m-auto semiland-slider">
+              
+              <!--Slider   https://imageresizer.com/-->
+              <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+                <ol class="carousel-indicators z-index-semiland-1">
+                  <li class="active" data-target="#slider1" data-slide-to="0"></li>
+                  <li data-target="#slider1" data-slide-to="1"></li>
+                  <li data-target="#slider1" data-slide-to="2"></li>
+                  <li data-target="#slider1" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img  class="d-block img-fluid" src="css/img/yang-zhong.jpg" alt="first-slide">
+                    <div class="carousel-caption d-none d-md-block z-index-semiland carousel-caption-2">
+                      <div class="new">
+                        <h1 class="main-heading-title-semiland">Semiland</h1>
+                        <h1 class="main-heading-title">Power the world with our technology!</h1>
+                        <h3></h3>
                       </div>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div  class="carousel-item">
+                    <img  class="d-block img-fluid" src="css/img/power-module-white.jpg" alt="second-slide">
+                    <div class="carousel-caption d-none d-md-block z-index-semiland">
+                      <h3></h3>
+                      <p>Semiland is headquarted in Yangzhong, China.</p>
+                    </div>
+                  </div>
+                  <div  class="carousel-item">
+                    <img  class="d-block img-fluid" src="css/img/power-module-2.jpg" alt="third-slide">
+                    <div class="carousel-caption d-none d-md-block z-index-semiland">
+                      <h3></h3>
+                      <p>Semiland R&amp;D center is located in Jubao park.</p>
+                    </div>
+                  </div>
+                  <div  class="carousel-item">
+                    <img  class="d-block img-fluid" src="css/img/with-shadow.jpg" alt="third-slide">
+                    <div class="carousel-caption d-none d-md-block z-index-semiland">
+                      <h3></h3>
+                      <p>Semiland, expert in making advanced WBG power modules!</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-              
-        
-        <section class="section-features js--section-features">
-            <div class="row">
-                <h2>Get your unique Power Module Design ready.</h2>
-                <p class="long-copy">
-                    We are offering you the best solutions for our costumers. We have a strong believe that our product will be valuable by our costumers.
-                </p>
+        </div>        
+      </section>
+      
+      <section id="home-articles-a" class="text-center-semiland py-2">
+        <div class="container">
+          <h4 class="section-title">Semiland Co., Ltd, headquartered in Yangzhong, China, is devoted to designing and developing high density power electronics modules using the advanced wide bandgap semiconductor devices to unleash their performance to the maximum extreme.  The company has a multinational team motivated to deliver superior power electromics module products to meet our customer requirements and accelerate SiC adoption.</h4>
+          <!--<div class="home-items">
+            <div class="home-item-1">
+              <h1>2017</h1>
+              <p>Semiland company was founded in 2017 in YangZhong, China.</p>
             </div>
-            <div class="row">
-                <div class="col span-1-of-4 box">
-                    <i class="icon ion-md-people icon-big"></i>
-                    <h3>Our team.</h3>
-                    <p>
-                        Take your Businness to a next level with us. 
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="icon ion-md-tablet-portrait icon-big"></i>
-                    <h3>Our Products.</h3>
-                    <p>
-                        Improve your product with the help of us. 
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="icon ion-md-trending-up icon-big"></i>
-                    <h3>Our Effort.</h3>
-                    <p>
-                        Problem solving with a great effort. 
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="icon ion-md-pulse icon-big"></i>
-                    <h3>Our Decisions.</h3>
-                    <p>
-                        Fast at decision making. Long time use.
-                    </p>
-                </div>
+            <div class="home-item-1">
+              <h1>2</h1>
+              <p>Two operations centers. The R&D center is located in Jubao Park, Nanjing.</p>
             </div>
-        </section>
-                
-        <section class="section-steps">
-            <div class="">
-                <h2>How to incorporate with us</h2>
+            <div class="home-item-1">
+              <h1>99.9</h1>
+              <p>This is to indicate our success!</p>
             </div>
-            <div class="row">
-                <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/11.ico" alt="Semiland Logo apper" class="app-screen">
-                </div> 
-                <div class="col span-1-of-2 steps-box">
-                    <div class="works-step">
-                        <div>1</div>
-                        <p>Choose which product for your needs!</p>
-                    </div>
-                    <div class="works-step">
-                        <div>2</div>
-                        <p>Prescribe your plans!</p>
-                    </div>
-                    <div class="works-step">
-                        <div>3</div>
-                        <p>Contact our manager!</p>
-                    </div>
-                    
-                    <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
-                    <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt=" App Store Button"></a>
-                </div>
+            <div class="home-item-1">
+              <h1>10</h1>
+              <p>International employees is working for US. Our company is open is internationals!</p>
             </div>
-        </section>
-        
-        <section class="section-cities">
-            <div class="row">
-                <h2>We are currently in these cities</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-2 box">
-                    <img src="resources/img/yangzhong.jpg" alt="YangZhong">
-                    <h3>YangZhong</h3>
-                    <div class="city-feature">
-                        <i class="icon ion-md-contact icon-small"></i>
-                        Factory 
-                    </div>
-                    <div class="city-feature">
-                        <i class="icon ion-md-mail icon-small"></i>
-                        factory@semiland.com
-                    </div>
-                    <div class="city-feature">
-                        <i class="icon ion-md-link icon-small"></i>
-                        <a href="#">semilandLink</a>
-                    </div>
-                </div>
-                <div class="col span-1-of-2 box">
-                    <img src="resources/img/nanjing.jpg" alt="Nanjing">
-                    <h3>Nanjing</h3>
-                    <div class="city-feature">
-                        <i class="icon ion-md-contact icon-small"></i>
-                        Research branch
-                    </div>
-                    <div class="city-feature">
-                        <i class="icon ion-md-mail icon-small"></i>
-                        research@semiland.com
-                    </div>
-                    <div class="city-feature">
-                        <i class="icon ion-md-link icon-small"></i>
-                        <a href="#">semilandLink</a>
-                    </div>
-                </div>
-            </div>
+          </div> -->
+        </div>
+      </section>
+      
+      <section id="home-articles-b">
+        <div class="container2 container-grid">
+          <section class="img-content">
+            <img src="css/img/applications/pv.jpg">
+          </section>
+          <aside class="sidebar">
+            <h2>Renewables</h2>
+            <p>A high-value application area is needed to settle a new device technology in the beginning stage of the high cost SiC transistors. Beside military and harsh-environmental applications, renewable energy systems are the most promising industrial application with high growth rates. The application of SiC power semiconductor devices in a PV energy system can help eliminate several issues which are at present due to the material limitations of silicon, and the need for a highly efficient and reliable power conversion system in wind turbines were also matched with the material properties of SiC.The unipolar nature of SiC MOSFET favors the development of high switching frequency power converters thereby reducing the size, weight and cost of system while maintaining superio performance as compared to its silicon IGBT counterpart.</p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+        </div>
+      </section>
+      
+      <section id="home-articles-c">
+        <div class="container2 container-grid container-grid-aside">
+          <aside class="sidebar">
+            <h2>EV/HEV</h2>
+            <p>The components involved in power semiconductor applications in EV system architecture include: motor driver, on board charger (OBC), on-board DC/ DC and off-board charging pile. The development of electric vehicles requires higher power, lower loss and smaller size of motor controllers.  At the same time, the trend of integration of motor and controller requires higher speed of motors, higher working frequency and smaller size of controllers. Therefore,  SiC devices are the inevitable choice for future electric vehicles.</p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+          <section class="img-content">
+            <img src="css/img/applications/car.jpg">
+          </section>
+        </div>
+      </section>
+      
+      <section id="home-articles-b">
+        <div class="container2 container-grid">
+          <section class="img-content">
+            <img src="css/img/applications/rail.jpg">
+          </section>
+          <aside class="sidebar">
+            <h2>Industrial</h2>
+            <p>Power electronics encompasses a very wide range of industrial applications including electrical and electronic equipment, household appliances, industrial production equipment, uninterrupted power supplies, tractions for trains, and high voltage DC transmission equipment etc. Use of SiC power electronic systems with high efficiency and simple cooling for these applications will strongly reduce electric energy consumption.</p>
+<!--            <a href="#">Discover more!</a>-->
+          </aside>
+        </div>
+      </section>
+      
+
+      <footer id="main-footer" class="pt-4">
+        <div class="foot">
+          <div class="footer-content container-footer">           
+          <div class="col span-1-of-2">
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
             
-        </section>
-                
-        
-        
-        <section class="section-form">
-            <div class="row">
-                 <h2>Contact Us</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <label for="name">Name</label>
-                </div>
-                <div class="col span-2-of-3">
-                    <input type="text" name="name" id="name" placeholder="Enter your name!" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col span-2-of-3">
-                    <input type="email" name="email" id="email" placeholder="Enter your email !" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <label for="find-us">How do you know about us?</label>
-                </div>
-                <div class="col span-2-of-3">
-                    <select name="find-us" id="find-us">
-                        <option value="friends">Friends</option>
-                        <option value="linkedin" selected>Linkedin</option>
-                        <option value="advertisement">Advertisement</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <label>News Letter?</label>
-                </div>
-                <div class="col span-2-of-3">
-                    <input type="checkbox" name="checkbox" id="checkbox" checked>Yes, please!
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <label>News Letter?</label>
-                </div>
-                <div class="col span-2-of-3">
-                    <textarea name="message" placeholder="Your message!"></textarea> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <label>&nbsp;</label>
-                </div>
-                <div class="col span-2-of-3">
-                    
-                    <input type="submit" class="btn btn-ghost" value="Submit!">
-                </div>
-            </div>
-            
-        </section>
-        
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>    
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><i class="icon ion-md-trophy"></i></li>
-                        <li><i class="icon ion-md-school"></i></li>
-                        <li><i class="icon ion-md-ribbon"></i></li>
-                        <li><i class="icon ion-md-play"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 by Semiland. All right reserved.
-                </p>
-            </div>
-                
-        </footer>
-         
-        <script scr="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>
-          $('.carousel').carousel({
-            interval: 3000,
-            keyboard: true,
-            pause: 'hover',
-            wrap: true
-          });
+          <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><i class="icon ion-logo-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+            <a href="https://www.google.com/" target="_blank"><i class="icon ion-logo-google"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="icon ion-logo-linkedin"></i></a>
+            <img src="css/img/semiland-QR.jpg" alt="" class="semiland-qr-code">
+          </div>
+        </div>
+        <div class="semiland-rights">
+          <p class="semiland-copyright">&copy;2020 Semiland Co., Ltd. All Rights Reserver.</p>
 
-          $('#slider4').on('slide.bs.carousel', function () {
-            console.log('SLIDE!');
-          });
+        </div>
+        </div>        
+      </footer>
 
-          $('#slider4').on('slid.bs.carousel', function () {
-            console.log('SLID!');
-          });
 
-        </script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/carousel.js"></script>
-        <script src="resources/js/scripts.js"></script>
-        <script src="resources/js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
     </body>
-
+  
+  
 </html>

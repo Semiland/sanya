@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1280px) {
+  
+}
+
+@media only screen and (max-width: 1023px) {
+  
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-wrap .hamburger {
+    visibility: visible;
+  }
+  
+  #main-nav .header-items {
+    visibility: hidden;
+  }
+}
